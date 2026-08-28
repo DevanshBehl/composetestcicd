@@ -16,3 +16,6 @@
 - Run npx. prisma generate 
 - Run npm run build
 - Run npm run start
+
+## Docker Installation 
+## Docker Compose Installation

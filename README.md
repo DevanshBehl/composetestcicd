@@ -18,6 +18,15 @@
 - Run npm run start
 
 ## Docker Installation 
+- Install docker 
+- Start a new docker network (docker network create user_project)
+- Run the docker postgres container 
+    - docker run --network user_project -e --name postgres POSTGRES_PASSWORD=mysecretpassword -p 5433:5432 -d postgres 
+- Build the image (docker build --network=host -t user_project .)
+- Run the image (docker run --network user_project -p 3002:3002 user_project)
+
+
+
 ## Docker Compose Installation
 - Install docker , docker compose 
 - Run docker compose up 
